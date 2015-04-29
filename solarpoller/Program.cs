@@ -55,10 +55,8 @@ namespace solarpoller
                     Console.WriteLine(num);
                     return 0;
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
-                    Console.Error.WriteLine("Exception: " + e.Message);
-
                     retries--;
                 }
             }
